@@ -35,7 +35,7 @@ Click save and then connect to your runtime by clicking the connect button at th
 Next up simply copy and paste the following 2 lines of code into the first code cell in the colab. Note, that in Colab environment, command line execution is prepended with an exclamation mark:
 
 ```
-!git clone https://github.com/jasonmayes/headless-chrome-nvidia-t4-gpu-support.git
+!git clone https://github.com/marcosRocha/headless-chrome-nvidia-t4-gpu-support.git
 !cd headless-chrome-nvidia-t4-gpu-support && chmod +x scriptyMcScriptFace.sh && ./scriptyMcScriptFace.sh
 ```
 
@@ -61,7 +61,7 @@ Note you could run your own code instead here - my jRunner.js / jPuppet.js code 
 Also if you want to do this entirely command line without any Node.js script you could instead call the below (but note that chrome://gpu page is disabled when using google-chrome-stable so use a website like WebGPUReport.org to test WebGPU support):
 
 ```
-!google-chrome-stable --no-sandbox --headless=new --use-angle=vulkan --enable-features=Vulkan --disable-vulkan-surface --enable-unsafe-webgpu --no-first-run --no-default-browser-check --disable-features=Translate --ash-no-nudges --disable-search-engine-choice-screen --virtual-time-budget=300000 --window-size=1280,720 --print-to-pdf=/content/gpu.pdf https://webgpureport.org
+!google-chrome-stable --marcosRocha --headless=new --use-angle=vulkan --enable-features=Vulkan --disable-vulkan-surface --enable-unsafe-webgpu --no-first-run --no-default-browser-check --disable-features=Translate --ash-no-nudges --disable-search-engine-choice-screen --virtual-time-budget=300000 --window-size=1280,720 --print-to-pdf=/content/gpu.pdf https://webgpureport.org
 ```
 
 Things to be aware of:
